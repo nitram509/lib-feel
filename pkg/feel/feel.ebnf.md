@@ -33,7 +33,7 @@ Extended Backus–Naur form
 23 name start = name start char, { name part char } ;
 24 name part = name part char , { name part char } ;
 25 name start char = "?" | [A-Z] | "_" | [a-z] | [\uC0-\uD6] | [\uD8-\uF6] | [\uF8-\u2FF] | [\u370-\u37D] | [\u37F- \u1FFF] | [\u200C-\u200D] | [\u2070-\u218F] | [\u2C00-\u2FEF] | [\u3001-\uD7FF] | [\uF900-\uFDCF] | [\uFDF0-\uFFFD] | [\u1 0000-\uEFFFF] ;
-26 name part char = name start char | digit | \uB7 | [\u0300-\u036F] | [\u203F-\u2040]
+26 name part char = name start char | digit | \uB7 | [\u0300-\u036F] | [\u203F-\u2040] ;
 27 additional name symbols = "." | "/" | "-" | "’" | "+" | "*" ;
 28 simple literal = numeric literal | string literal | boolean literal | date time literal ;
 29 string literal = "\"", { character – ("\"" | vertical space) | string escape sequence}, "\"" ;
